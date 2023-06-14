@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(87,87,87) 1px;
+    border-radius: 5%;
+    background-color: #7ea347;
+    width: 17rem;
+    color: white;
+}
+
+.card img {
+    height: 10rem;
+}
