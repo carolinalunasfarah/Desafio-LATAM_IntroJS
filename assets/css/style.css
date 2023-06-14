@@ -11,10 +11,28 @@ main {
     border: solid rgb(87,87,87) 1px;
     border-radius: 5%;
     background-color: #7ea347;
-    width: 17rem;
+    width: 15rem;
     color: white;
+    padding: 0.8rem;
 }
 
 .card img {
     height: 10rem;
+}
+
+.card button{
+    background-color: #e2a30b;
+    color: white;
+    border-radius: 10%;
+}
+
+.card input {
+    margin-top: 1rem;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center
 }

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro JSS</title>
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <main>
-        <div class="card">
-            <img src="assets/img/laptop.png" alt="Laptop Gamer AMD image">
-            <h4>Laptop Gamer AMD</h4>
-            <input type="text" name="cantidad" id="">
-            <input type="text" name="color" id="">
-            <p>Price: $400.000.-</p>
-            <button>
-                <p>Total Amount</p>
-            </button>
-        </div>
-        <section class="summary">
-            <p>Total</p>
-            <p>Amount</p>
-            <p>Color</p>
-        </section>
-    </main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intro JSS</title>
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="card">
+                <img src="assets/img/laptop.png" alt="Laptop Gamer AMD image" />
+                <h4>Laptop Gamer AMD</h4>
+                <input type="number"
+                placeholder="Quantity" 
+                id="selectedAmount"
+                min="1"/>
+                <input type="text"
+                placeholder="Color"
+                id="selectedColor" />
+                <p>Price: $400.000.-</p>
+                <button id="calculateTotal">Calculate total</button>
+            </div>
+            <section class="summary">
+                <p>Total: $ <span id="total">0</span></p>
+                <p>Amount: <span id="amount">0</span></p>
+                <p>Color: <span id="color"></span></p>
+            </section>
+        </main>
 
-    <!-- js -->
-    <script src="assets/js/script.js"></script>
-</body>
+        <!-- js -->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
