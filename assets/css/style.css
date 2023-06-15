@@ -36,3 +36,10 @@ main {
     justify-content: center;
     align-content: center
 }
+
+.circleColor {
+    height: 1rem;
+    width: 1rem;
+    border: solid rgb(87,87,87) 1px;
+    border-radius: 50%;
+}

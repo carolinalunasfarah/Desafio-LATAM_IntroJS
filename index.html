@@ -12,20 +12,20 @@
             <div class="card">
                 <img src="assets/img/laptop.png" alt="Laptop Gamer AMD image" />
                 <h4>Laptop Gamer AMD</h4>
-                <input type="number"
-                placeholder="Quantity" 
-                id="selectedAmount"
-                min="1"/>
-                <input type="text"
-                placeholder="Color"
-                id="selectedColor" />
+                <input
+                    type="number"
+                    placeholder="Quantity"
+                    id="selectedAmount"
+                    min="1" />
+                <input type="text" placeholder="Color" id="selectedColor" />
                 <p>Price: $400.000.-</p>
                 <button id="calculateTotal">Calculate total</button>
             </div>
             <section class="summary">
                 <p>Total: $ <span id="total">0</span></p>
                 <p>Amount: <span id="amount">0</span></p>
-                <p>Color: <span id="color"></span></p>
+                <p>Color:</p>
+                <article id="color" class="circleColor"></article>
             </section>
         </main>
 
