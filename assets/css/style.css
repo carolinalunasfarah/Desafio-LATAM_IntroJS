@@ -1,45 +1,119 @@
+* {
+    background-color: rgb(87,87,87);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* main */
 main {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* card */
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid rgb(87,87,87) 1px;
+    border: solid white 2px;
     border-radius: 5%;
-    background-color: #7ea347;
-    width: 15rem;
-    color: white;
+    background-color: rgb(87,87,87);
+    width: 25rem;
     padding: 0.8rem;
+    margin: 3rem;
+    filter: drop-shadow(1rem 1rem 3rem #7ea3477a);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: ease 2s;
 }
 
 .card img {
     height: 10rem;
+    background-color: rgb(87,87,87);
+}
+
+.card h4,p {
+    background-color: rgb(87,87,87);
+}
+
+.card h4 {
+    margin: 0.5rem;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 0.5rem;
+    font-weight: bold;
 }
 
 .card button{
-    background-color: #e2a30b;
-    color: white;
+    background-color: #7ea347;
     border-radius: 10%;
+    height: 2rem;
+    width: 8rem;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0.8rem;
+}
+
+button:hover {
+    cursor: progress;
 }
 
 .card input {
-    margin-top: 1rem;
+    margin: 0.5rem;
+    background-color: rgb(87,87,87);
 }
 
+::placeholder {
+    color: white;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+#refresh:hover {
+    transform: scale(1.05);
+    color: #7ea347;
+    transition: 1s ease;
+}
+
+/* summary */
 .summary {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-content: center
+    align-content: center;
+    background-color: rgb(87,87,87);
+}
+
+.summary p, span {
+    margin: 0.8rem;
+    background-color: rgb(87,87,87);
+}
+
+.circle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(87,87,87);
 }
 
 .circleColor {
+    background-color: rgb(87,87,87);
     height: 1rem;
     width: 1rem;
-    border: solid rgb(87,87,87) 1px;
+    border: solid rgb(255, 255, 255) 1px;
     border-radius: 50%;
 }

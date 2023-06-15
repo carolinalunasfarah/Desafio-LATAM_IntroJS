@@ -6,27 +6,45 @@
         <title>Intro JSS</title>
         <!-- css -->
         <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@100;700&display=swap"
+            rel="stylesheet" />
+        <!-- fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/f4fd55b42a.js"
+            crossorigin="anonymous"></script>
     </head>
     <body>
         <main>
             <div class="card">
                 <img src="assets/img/laptop.png" alt="Laptop Gamer AMD image" />
                 <h4>Laptop Gamer AMD</h4>
+                <p>Price: $400.000.-</p>
                 <input
                     type="number"
                     placeholder="Quantity"
                     id="selectedAmount"
                     min="1" />
-                <input type="text" placeholder="Color" id="selectedColor" />
-                <p>Price: $400.000.-</p>
-                <button id="calculateTotal">Calculate total</button>
+                <input
+                    type="text"
+                    placeholder="Color (Violet, blue, etc.)"
+                    id="selectedColor" />
+                <article>
+                    <button id="calculateTotal">Calculate total</button>
+                    <i class="fa-solid fa-arrows-rotate" id="refresh"></i>
+                </article>
+                <section class="summary">
+                    <p>Total: $ <span id="total">0</span></p>
+                    <p>Amount: <span id="amount">0</span></p>
+                    <article class="circle">
+                        <p>Color:</p>
+                        <article id="color" class="circleColor"></article>
+                    </article>
+                </section>
             </div>
-            <section class="summary">
-                <p>Total: $ <span id="total">0</span></p>
-                <p>Amount: <span id="amount">0</span></p>
-                <p>Color:</p>
-                <article id="color" class="circleColor"></article>
-            </section>
         </main>
 
         <!-- js -->
